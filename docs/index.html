@@ -9,14 +9,15 @@
 </head>
 <body class="bg-black text-white">
     <section class="sm:border sm:w-9/12 sm:h-5/6 m-auto sm:my-10 my-5 rounded-xl">
-        <div class="px-10 py-5">
+        <div class="sm:px-10 px-5 py-5">
             <h1 class="text-4xl font-bold">Sign up</h1>
             <h2 class="mt-4 text-base">Enter your details below to create your account and get started.</h2>
         </div>
         <form action="" class="">
-            <div id="input-container" class=" px-10 flex flex-col sm:flex-row sm:justify-around ">
+            <!-- All inputs -->
+            <div id="input-container" class=" sm:px-10 px-5 flex flex-col sm:flex-row sm:justify-around ">
                 <!-- Full name, email, DOB section -->
-                <div id="left-top" class=" py-2 sm:w-6/12  ">
+                <div id="left-top" class=" sm:py-2 sm:w-6/12  ">
                     <div class="">
                         <label for="fullName" class="text-xl">Full Name</label><br>
                         <input type="text" name="fullName" id="fullName" placeholder="Enter your Full Name" class="p-2 text-slate-100 sm:w-11/12 w-full bg-black border border-slate-500 rounded-md h-10 my-3">
@@ -38,7 +39,7 @@
                 </div>
     
                 <!-- Phone number, password, confirm password section -->
-                <div id="right-bottom" class=" py-2 sm:w-6/12 ">
+                <div id="right-bottom" class=" sm:py-2 sm:w-6/12 ">
                     <div>
                         <label for="phoneNumber" class="text-xl">Phone Number</label><br>
                         <input type="tel" id="phoneNumber" placeholder="Enter your Phone Number" class="p-2 text-slate-100 sm:w-11/12 w-full bg-black border border-slate-500 rounded-md h-10 my-3" >
@@ -67,10 +68,11 @@
                     </div>
                 </div>
             </div>
+            <!-- All inputs ends -->
             
-            <div id="buttons" class=" sm:w-full m-auto h-full flex py-4 gap-5 px-10 sm:gap-12">
-                <button id="cancel" type="reset" class=" sm:w-[45%] w-4/6  py-1  bg-black border font-semibold h-10 text-white rounded-lg ">Cancel</button>
-                <button id="submit" type="submit" class=" sm:w-[45%] w-4/6  py-1  bg-slate-300 font-semibold h-10 text-black rounded-lg hover:bg-white">Confirm</button>
+            <div id="buttons" class=" w-full flex justify-around sm:gap-16 gap-5 sm:px-12 px-6">
+                <button id="cancel" type="reset" class="float-left w-6/12  py-1  bg-black border font-semibold h-10 text-white rounded-lg ">Cancel</button>
+                <button id="submit" type="submit" class="float-right w-6/12 py-1  bg-slate-300 font-semibold h-10 text-black rounded-lg hover:bg-white sm:mr-11">Confirm</button>
             </div>
 
             <p class="text-center p-5 text-slate-400 font-semibold">Already have an account ? <a href="" class="text-white">Login</a></p>
