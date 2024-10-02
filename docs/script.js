@@ -77,7 +77,7 @@ form.addEventListener('submit', (e) => {
             isAlphabet = true;
             nameError.innerHTML = '';
         } else if (isAlphabet === false) {
-            nameError.innerHTML = "*Enter your name with aplhabets only*";
+            nameError.innerHTML = "*Enter your name with alphabets only*";
             fullName.style.border = '2px solid white';
         } 
     } 
@@ -122,7 +122,7 @@ form.addEventListener('submit', (e) => {
     if (password) {
         if (passwordValue.length < 8 || passwordValue.length > 12 ) {
             isPasswordSame = false;
-            passwordError.innerHTML = '*It must have 8-12 charcters only.*';
+            passwordError.innerHTML = '*It must have 8-12 characters only.*';
         } else {
             passwordError.innerHTML = '';
         } 
@@ -153,7 +153,6 @@ form.addEventListener('submit', (e) => {
             location.reload();             
         }, 1000);
     }
-
 });
 
 
